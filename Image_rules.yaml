@@ -1,0 +1,24 @@
+version: "1.1"
+image_processing_rules:
+  base_image_policy:
+    modify_structure: false
+    keep_original_layout: true
+    allow_structural_changes: "FORBIDDEN"
+    allow_resize: false
+
+  allowed_modifications:
+    color_adjustments:
+      - "تغییر رنگ‌ها"
+      - "تغییر طیف رنگی (Color Palette / Spectrum)"
+    
+    quality_adjustments:
+      - "تنظیم وضوح و رزولوشن (Sharpness / Resolution)"
+
+    visual_effects:
+      - "Double Vision / Chromatic Aberration (افکت دوبینی و جابه‌جایی کانال‌های رنگی)"
+      - "Texture Overlay (افکت بافت و لایه‌های ظاهری)"
+      - "Composition Blend (ادغام و ترکیب عناصر بصرى)"
+      - "Style Transfer (تغییر سبک هنری با حفظ ساختار)"
+
+  strict_constraints:
+    rule: "تصویر پایه باید بدون تغییر سایز و ساختار اجرا شود؛ صرفاً اصلاحات رنگ، وضوح و افکت‌های بصری نام‌برده مجاز است."
