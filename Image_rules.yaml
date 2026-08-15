@@ -1,4 +1,8 @@
-version: "1.1"
+version: "1.2"
+base_image_specs:
+  github_path: "f21ec176-d172-4c5d-b89c-2d467946dd5f.png"
+  description: "طرح لوگو/عنصر گرافیكی با کادر دایره‌ای، تایپوگرافی یا نماد مرکزی و المان‌های شعاعی/حاشیه‌ای"
+
 image_processing_rules:
   base_image_policy:
     modify_structure: false
@@ -17,8 +21,8 @@ image_processing_rules:
     visual_effects:
       - "Double Vision / Chromatic Aberration (افکت دوبینی و جابه‌جایی کانال‌های رنگی)"
       - "Texture Overlay (افکت بافت و لایه‌های ظاهری)"
-      - "Composition Blend (ادغام و ترکیب عناصر بصرى)"
+      - "Composition Blend (ادغام و ترکیب عناصر بصری)"
       - "Style Transfer (تغییر سبک هنری با حفظ ساختار)"
 
   strict_constraints:
-    rule: "تصویر پایه باید بدون تغییر سایز و ساختار اجرا شود؛ صرفاً اصلاحات رنگ، وضوح و افکت‌های بصری نام‌برده مجاز است."
+    rule: "تصویر f21ec176-d172-4c5d-b89c-2d467946dd5f.png به عنوان بیس اصلی ثبت شد و هیچ‌گونه تغییر ساختاری یا سایز در آن مجاز نیست."
