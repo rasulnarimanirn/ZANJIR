@@ -1,28 +1,25 @@
-version: "1.2"
+version: "2.0"
 base_image_specs:
   github_path: "f21ec176-d172-4c5d-b89c-2d467946dd5f.png"
-  description: "طرح لوگو/عنصر گرافیكی با کادر دایره‌ای، تایپوگرافی یا نماد مرکزی و المان‌های شعاعی/حاشیه‌ای"
+  subject: "ساز دف با حلقه و پس‌زمینه ابری/بافتی"
+  policy: "قالب اصلی کاملاً دست‌نخورده و قفل است."
 
-image_processing_rules:
-  base_image_policy:
-    modify_structure: false
-    keep_original_layout: true
-    allow_structural_changes: "FORBIDDEN"
-    allow_resize: false
+canvas_execution_rules:
+  frame_status: "LOCKED"
+  design_area: "داخل پوست دف (Inside the Daf drumhead surface)"
+  
+  default_behavior:
+    keep_exact_colors: true
+    keep_exact_lighting: true
+    keep_exact_background: true
+    rule: "تا زمانی که کاربر صراحتاً تغییر رنگ یا افکتی را درخواست نکرده، قالب پایه باید ۱۰۰٪ بدون کوچک‌ترین تغییر اجرا شود."
 
-  allowed_modifications:
-    color_adjustments:
-      - "تغییر رنگ‌ها"
-      - "تغییر طیف رنگی (Color Palette / Spectrum)"
-    
-    quality_adjustments:
-      - "تنظیم وضوح و رزولوشن (Sharpness / Resolution)"
+  conditional_modifications:
+    description: "تغییرات زیر فقط و فقط در صورت درخواست مستقیم کاربر در متن پیام اعمال می‌شوند:"
+    options:
+      - "تغییر رنگ یا طیف رنگی"
+      - "افزایش یا تغییر وضوح"
+      - "افکت‌های بصری (دوبینی، بافت، ادغام)"
 
-    visual_effects:
-      - "Double Vision / Chromatic Aberration (افکت دوبینی و جابه‌جایی کانال‌های رنگی)"
-      - "Texture Overlay (افکت بافت و لایه‌های ظاهری)"
-      - "Composition Blend (ادغام و ترکیب عناصر بصری)"
-      - "Style Transfer (تغییر سبک هنری با حفظ ساختار)"
-
-  strict_constraints:
-    rule: "تصویر f21ec176-d172-4c5d-b89c-2d467946dd5f.png به عنوان بیس اصلی ثبت شد و هیچ‌گونه تغییر ساختاری یا سایز در آن مجاز نیست."
+  content_addition:
+    rule: "حروف، کلمات و متون فقط باید در داخل فضای خالی مرکز دف قرار گیرند و با قالب پایه ترکیب شوند."
