@@ -1,0 +1,92 @@
+# ZANJIR - MASTER EXECUTION RULES
+# This file defines how all other rules must be interpreted and executed.
+
+PROJECT:
+  name: ZANJIR
+  mode: RULE_LOCKED
+  guessing_allowed: false
+  creative_interpretation_allowed: false
+
+RULE_PRIORITY:
+  1: EXECUTION_RULES.yaml
+  2: Image_rules.yaml
+  3: Taxt_rules.yaml
+
+CORE_PRINCIPLE:
+  text_is_drawn_on_the_drumhead: true
+  text_is_not_placed_on_the_image: true
+  text_is_not_a_sticker: true
+  text_is_not_an_independent_graphic: true
+
+MANDATORY_READ_ORDER:
+  - EXECUTION_RULES.yaml
+  - Image_rules.yaml
+  - Taxt_rules.yaml
+
+LOCKED_ASSETS:
+  original_frame:
+    status: LOCKED
+    must_be_preserved: true
+    reconstruction_forbidden: true
+    regeneration_forbidden: true
+    redesign_forbidden: true
+
+TARGET_SURFACE:
+  name: DRUMHEAD_SKIN
+  status: LOCKED
+  text_allowed_here_only: true
+
+TEXT_EXECUTION:
+  text_must_follow_Taxt_rules: true
+  text_must_follow_Image_rules: true
+  text_must_conform_to_drumhead: true
+  text_must_inherit_surface_lighting: true
+  text_must_inherit_surface_texture: true
+  independent_text_material: false
+  independent_text_lighting: false
+  sticker_effect: false
+  floating_text: false
+  flat_overlay: false
+
+FORBIDDEN:
+  - reconstructing_the_frame
+  - changing_the_background
+  - changing_the_drum
+  - changing_the_drumhead
+  - replacing_the_original_image
+  - placing_text_outside_drumhead
+  - generating_text_as_a_separate_sticker
+  - using_a_standard_font_when_forbidden_by_Taxt_rules
+  - treating_text_as_a_logo
+  - adding_unrequested_decoration
+  - guessing_missing_rules
+  - ignoring_conflicting_rules
+
+FAIL_CLOSED:
+  enabled: true
+  action_if_rule_missing: STOP
+  action_if_rule_conflicts: STOP
+  action_if_target_surface_unclear: STOP
+  action_if_locked_asset_unclear: STOP
+  action_if_text_style_unclear: STOP
+
+WORKFLOW:
+  - READ_ALL_RULES
+  - IDENTIFY_LOCKED_ASSETS
+  - IDENTIFY_TARGET_SURFACE
+  - BUILD_TEXT_ACCORDING_TO_TAXT_RULES
+  - CONFORM_TEXT_TO_DRUMHEAD
+  - VALIDATE_AGAINST_ALL_RULES
+  - REQUEST_FINAL_APPROVAL
+  - CREATE_FINAL_OUTPUT_ONLY_AFTER_APPROVAL
+
+APPROVAL:
+  required_before_final_output: true
+  required_before_frame_integration: true
+  approval_cannot_be_assumed: true
+
+VALIDATION:
+  frame_unchanged: REQUIRED
+  background_unchanged: REQUIRED
+  drumhead_unchanged: REQUIRED
+  text_on
