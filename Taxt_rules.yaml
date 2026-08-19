@@ -1,0 +1,346 @@
+ZJ_TEXT:
+  VERSION: "1.0"
+  STATUS: "MASTER_TEXT_RULES"
+
+  IDENTITY:
+    TYPE: "DISTURBED_WRITING_SYSTEM"
+    PURPOSE: "CREATE_A_DISTINCTIVE_RECOGNIZABLE_WRITING_LANGUAGE"
+    TYPOGRAPHY: false
+    STANDARD_FONT: false
+    CALLIGRAPHY: false
+    NORMAL_HANDWRITING: false
+    DIGITAL_TEXT_APPEARANCE: false
+
+  # --------------------------------------------------
+  # CORE FORM
+  # --------------------------------------------------
+
+  FORM:
+    CLEAN: false
+    PRECISE: false
+    PERFECT: false
+    REGULAR: false
+    BALANCED: false
+    SYMMETRICAL: false
+    REFINED: false
+    POLISHED: false
+
+    BROKEN: true
+    IRREGULAR: true
+    UNBALANCED: true
+    DISTORTED: true
+    FRAGMENTED: true
+    ROUGH: true
+    UNSTABLE: true
+
+  # --------------------------------------------------
+  # LETTER SKELETON
+  # --------------------------------------------------
+
+  SKELETON:
+    METHOD: "HAND_BUILT_FORM"
+    FONT_BASED: false
+    PREDEFINED_GLYPHS: false
+    CLEAN_OUTLINE: false
+
+    GEOMETRY:
+      PERFECT_GEOMETRY: false
+      GEOMETRIC_REGULARITY: false
+      ANGLES: "IRREGULAR"
+      CURVES: "IMPERFECT"
+      SYMMETRY: false
+
+    PROPORTION:
+      FIXED: false
+      WIDTH: "VARIABLE"
+      HEIGHT: "VARIABLE"
+      STROKE_LENGTH: "VARIABLE"
+      THICKNESS: "VARIABLE"
+
+    STRUCTURE:
+      BROKEN_SEGMENTS: true
+      INTERRUPTED_LINES: true
+      OVERLAPPING_SEGMENTS: true
+      INCOMPLETE_SEGMENTS: true
+      DISTORTION: "CONTROLLED"
+
+  # --------------------------------------------------
+  # STROKE DNA
+  # --------------------------------------------------
+
+  STROKE_DNA:
+    STYLE: "NERVOUS_BROKEN_SCRATCH"
+
+    LINE:
+      SMOOTH: false
+      PERFECTLY_STRAIGHT: false
+      UNIFORM: false
+      BROKEN: true
+      ROUGH: true
+      SHARP_STARTS: true
+      BROKEN_ENDS: true
+
+    PRESSURE:
+      VARIABLE: true
+      UNIFORM: false
+      EXTREME_VARIATION: true
+
+    DIRECTION:
+      FIXED: false
+      MULTI_DIRECTIONAL: true
+      INTERSECTING: true
+      OVERLAPPING: true
+
+    MOVEMENT:
+      CONTROLLED: false
+      NERVOUS: true
+      INTERRUPTED: true
+      UNEVEN: true
+
+  # --------------------------------------------------
+  # HATCH DNA
+  # --------------------------------------------------
+
+  HATCH_DNA:
+    REQUIRED: true
+
+    ROLE:
+      FORM_CONSTRUCTION: true
+      DECORATION_ONLY: false
+
+    TYPE:
+      HATCH: true
+      CROSS_HATCH: true
+      SCRATCH: true
+      BROKEN_HATCH: true
+
+    DIRECTION:
+      UNIFORM: false
+      MULTI_DIRECTIONAL: true
+      IRREGULAR: true
+
+    DENSITY:
+      BASE: "HIGH"
+      VARIABLE: true
+      LOCAL_PEAKS: true
+      LOCAL_LOW_POINTS: true
+
+    OVERLAP:
+      REQUIRED: true
+      LIGHT: false
+      HEAVY: true
+
+    REGULARITY:
+      ORDERED: false
+      REPETITIVE: false
+      MECHANICAL: false
+
+    CORE_RULE:
+      HATCHING_MUST_BUILD_THE_LETTER: true
+      HATCHING_MUST_NOT_HIDE_THE_LETTER: true
+
+  # --------------------------------------------------
+  # LETTER BEHAVIOR
+  # --------------------------------------------------
+
+  LETTER_BEHAVIOR:
+    ALIGNMENT:
+      PERFECT_ALIGNMENT: false
+      BASELINE: "UNSTABLE"
+
+    SCALE:
+      IDENTICAL: false
+      VARIABLE: true
+
+    SPACING:
+      UNIFORM: false
+      VARIABLE: true
+      IRREGULAR: true
+
+    POSITION:
+      PERFECTLY_ALIGNED: false
+      MICRO_SHIFT: true
+      NATURAL_INSTABILITY: true
+
+    INTERACTION:
+      OVERLAP_ALLOWED: true
+      COLLISION_ALLOWED: true
+      MERGING_ALLOWED: "CONTROLLED"
+      LETTER_SEPARATION: "VARIABLE"
+
+  # --------------------------------------------------
+  # WORD DNA
+  # --------------------------------------------------
+
+  WORD_DNA:
+    FORM:
+      CLEAN_WORD_SHAPE: false
+      PERFECT_ALIGNMENT: false
+      UNIFORM_LETTER_SIZE: false
+      UNIFORM_SPACING: false
+
+    STRUCTURE:
+      BASELINE: "UNSTABLE"
+      RHYTHM: "IRREGULAR"
+      DENSITY: "VARIABLE"
+      COMPRESSION: "VARIABLE"
+
+    BEHAVIOR:
+      LETTERS_MAY_APPROACH: true
+      LETTERS_MAY_OVERLAP: true
+      LETTERS_MAY_PRESS_AGAINST_EACH_OTHER: true
+
+    LIMIT:
+      WORD_MUST_REMAIN_RECOGNIZABLE: true
+      LETTER_IDENTITY_MUST_REMAIN_RECOGNIZABLE: true
+      CHAOS_MUST_NOT_DESTROY_READABILITY: true
+
+  # --------------------------------------------------
+  # READABILITY
+  # --------------------------------------------------
+
+  READABILITY:
+    REQUIRED: true
+    TARGET: "CLEARLY_RECOGNIZABLE"
+
+    IMMEDIATE_PERFECT_READABILITY: false
+    DISTORTION: "CONTROLLED"
+    MAX_DISTORTION: "BEFORE_LETTER_IDENTITY_IS_LOST"
+
+    RULES:
+      EVERY_LETTER_MUST_REMAIN_IDENTIFIABLE: true
+      WORD_MUST_BE_READABLE: true
+      WORD_MUST_NOT_BECOME_RANDOM_SCRIBBLE: true
+      SCRATCHING_MUST_NOT_OBSCURE_THE_WORD: true
+      HATCHING_MUST_SUPPORT_LETTER_STRUCTURE: true
+
+  # --------------------------------------------------
+  # RELIEF / PHYSICAL PRESENCE
+  # --------------------------------------------------
+
+  RELIEF:
+    TYPE: "RAISED"
+    PROMINENT: true
+    FLAT: false
+
+    VISUAL_WEIGHT:
+      STRONG: true
+      SUBTLE: false
+
+  # --------------------------------------------------
+  # WRITING SIGNATURE
+  # --------------------------------------------------
+
+  SIGNATURE:
+    BROKEN_STROKES: "ALWAYS"
+    VARIABLE_PRESSURE: "ALWAYS"
+    DENSE_HATCHING: "ALWAYS"
+    IMPERFECT_GEOMETRY: "ALWAYS"
+    UNSTABLE_BASELINE: "ALWAYS"
+    IRREGULAR_SPACING: "ALWAYS"
+    CONTROLLED_DISTORTION: "ALWAYS"
+
+    CONSISTENCY:
+      SAME_WRITING_SYSTEM: true
+      SAME_VISUAL_DNA: true
+      SAME_LINE_LANGUAGE: true
+      SAME_HATCH_LANGUAGE: true
+
+  # --------------------------------------------------
+  # DESIGNER IMPRINT
+  # --------------------------------------------------
+
+  DESIGNER_IMPRINT:
+    PROFESSIONAL_TYPOGRAPHER: false
+    CALLIGRAPHER: false
+    DIGITAL_DESIGNER: false
+    MECHANICAL_PRECISION: false
+    PERFECT_CONTROL: false
+
+    CHARACTER:
+      SUPPRESSION: true
+      FRUSTRATION: true
+      ANGER: true
+      SUFFERING: true
+      INNER_TENSION: true
+
+    VISUAL_RESULT:
+      BEAUTY: "REJECTED"
+      COMFORT: "REJECTED"
+      TENSION: "HIGH"
+      DISTURBANCE: "HIGH"
+      UGLINESS: "INTENTIONAL"
+
+  # --------------------------------------------------
+  # AESTHETIC CONTROL
+  # --------------------------------------------------
+
+  AESTHETIC:
+    BEAUTIFUL_TYPOGRAPHY: false
+    DECORATIVE_TYPOGRAPHY: false
+    ELEGANCE: false
+    POLISH: false
+    VISUAL_PERFECTION: false
+
+    DISTINCTIVENESS: "REQUIRED"
+    UNUSUAL_APPEARANCE: "REQUIRED"
+    VISUAL_TENSION: "REQUIRED"
+    ORGANIC_IMPERFECTION: "REQUIRED"
+
+  # --------------------------------------------------
+  # FORBIDDEN
+  # --------------------------------------------------
+
+  FORBIDDEN:
+    NORMAL_FONT: true
+    STANDARD_FONT: true
+    BEAUTIFUL_FONT: true
+    CALLIGRAPHY: true
+    CLEAN_HANDWRITING: true
+    DIGITAL_TYPING_APPEARANCE: true
+
+    CLEAN_OUTLINES: true
+    PERFECT_GEOMETRY: true
+    PERFECT_SYMMETRY: true
+    UNIFORM_STROKES: true
+    UNIFORM_SPACING: true
+    UNIFORM_LETTER_SIZE: true
+
+    RETOUCHING: true
+    POLISHING: true
+    AUTOMATIC_CLEANUP: true
+
+    RANDOM_SCRIBBLE_REPLACING_LETTERS: true
+    ILLEGIBLE_WORD: true
+    UNRECOGNIZABLE_LETTERS: true
+    DECORATIVE_HATCHING_WITHOUT_STRUCTURAL_ROLE: true
+
+  # --------------------------------------------------
+  # MASTER PRINCIPLE
+  # --------------------------------------------------
+
+  MASTER_PRINCIPLE:
+    TEXT_IS_NOT_A_FONT: true
+    TEXT_IS_NOT_NORMAL_HANDWRITING: true
+    TEXT_IS_NOT_RANDOM_SCRIBBLE: true
+
+    DEFINITION: >
+      The word must appear as a recognizable written word,
+      but its letters must be constructed through broken,
+      nervous, irregular and heavily hatched forms.
+      The visual disorder must exist inside the structure
+      of the letters rather than replacing the letters.
+      Every word must belong to the same distinctive writing
+      system while retaining its own natural irregularity.
+
+  # --------------------------------------------------
+  # GENERATION CONTROL
+  # --------------------------------------------------
+
+  GENERATION:
+    USE_TEXT_RULES: true
+    PRESERVE_READABILITY: true
+    PRESERVE_WRITING_DNA: true
+    DO_NOT_USE_STANDARD_FONT: true
+    DO_NOT_NORMALIZE: true
+    DO_NOT_RETROFIT_FONT: true
