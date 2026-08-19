@@ -1,4 +1,5 @@
 version: "2.0"
+
 base_image_specs:
   github_path: "f21ec176-d172-4c5d-b89c-2d467946dd5f.png"
   subject: "ساز دف با حلقه و پس‌زمینه ابری/بافتی"
