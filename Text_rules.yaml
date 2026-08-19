@@ -1,4 +1,7 @@
-ZJ_TEXT:
+# ZANJIR - MASTER TEXT RULES
+# Defines the exact visual DNA, stroke behavior, and structural rules for text creation.
+
+Text_rules:
   VERSION: "1.0"
   STATUS: "MASTER_TEXT_RULES"
 
@@ -324,14 +327,7 @@ ZJ_TEXT:
     TEXT_IS_NOT_NORMAL_HANDWRITING: true
     TEXT_IS_NOT_RANDOM_SCRIBBLE: true
 
-    DEFINITION: >
-      The word must appear as a recognizable written word,
-      but its letters must be constructed through broken,
-      nervous, irregular and heavily hatched forms.
-      The visual disorder must exist inside the structure
-      of the letters rather than replacing the letters.
-      Every word must belong to the same distinctive writing
-      system while retaining its own natural irregularity.
+    DEFINITION: "The word must appear as a recognizable written word, but its letters must be constructed through broken, nervous, irregular and heavily hatched forms. The visual disorder must exist inside the structure of the letters rather than replacing the letters. Every word must belong to the same distinctive writing system while retaining its own natural irregularity."
 
   # --------------------------------------------------
   # GENERATION CONTROL
